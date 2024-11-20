@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.titulo {
+    margin: 20px 0 80px;
+    text-align: center;
+}
+.conteudo-dispositivo {
+    display: none;
+    text-align: center;
+}
+@media only screen and (max-width: 480px) {
+    body {
+        background-color: #d46A6A;
+        color: #FFF;
+    }
+    .conteudo-dispositivo.pequeno{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 720px) {
+    body {
+        background-color: #758AA8;
+        color: #FFF;
+    }
+    .conteudo-dispositivo.medio{
+        display: block;
+    }
+}
+@media only screen and (min-width: 721px) {
+    body{
+        background-color: #D4CE6A;
+        color: #000;
+    }
+    .conteudo-dispositivo.grande{
+        display: block;
+    }
+}
